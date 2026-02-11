@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu sistemas</title>
+    <script src="./script.js"></script>
+    <style>
+        body {
+            background-color: #3fbba3;
+        }
+
+        .container_login {
+            width: 40%;
+            background-color: white;
+            margin: 80px auto;
+            height: 500px;
+            border-radius: 8px;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input {
+            height: 54px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button_login {
+            width: 100px;
+            height: 44px;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #0b847a;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button_login:hover {
+            background-color: #10c4b5;
+            transform: scale(1.05);
+        }
+
+        .container_checkbox {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_login">
+        <h1>Login</h1>
+        <input class="input" type="text" placeholder="Email" id="email">
+        <input class="input" type="password" placeholder="Senha" id="senha">
+        <div class="container_checkbox">
+            <input type="checkbox" id="exibir_senha" onclick="exibirSenha()">
+            <label>Exibir senha</label>
+        </div>
+
+        <button onclick=" realizarLogin()" class="button_login">Entrar</button>
+
+        <p>Ainda não tem conta? <a href="../sobre.html">Crie agora</a></p>
+        <a href="../sobre.html" hidden id="sobre"></a>
+    </div>
+</body>
+
+</html>
